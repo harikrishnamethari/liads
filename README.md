@@ -25,7 +25,7 @@
     sudo systemctl daemon-reload
     sudo systemctl enable liads.service
     sudo systemctl start liads.service
-4. *Verify* by checking logs in `/opt/liads/logs/` and running `liads/scripts/dashboard.sh`.
+4. **Verify** by checking logs in `/opt/liads/logs/` and running `liads/scripts/dashboard.sh`.
 
 ## Logs
 
