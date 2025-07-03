@@ -19,6 +19,7 @@
 2. **Install dependencies** on Arch Linux:
     ```bash
     sudo pacman -S inotify-tools net-tools
+    ```
     (`iproute2` and `bash` are already installed by default.)
 3. **Enable and start** the LIADS service:
     ```bash
