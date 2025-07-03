@@ -18,29 +18,30 @@
     git clone https://github.com/youruser/liads.git /opt/liads
 2. **Install dependencies** on Arch Linux:
     sudo pacman -S inotify-tools net-tools
-    (iproute2 and bash are already installed by default.)
+    (`iproute2` and `bash` are already installed by default.)
 3. **Enable and start** the LIADS service:
+    ```bash
     sudo cp /opt/liads/systemd/liads.service /etc/systemd/system/
     sudo systemctl daemon-reload
     sudo systemctl enable liads.service
     sudo systemctl start liads.service
-4. *Verify* by checking logs in /opt/liads/logs/ and running liads/scripts/dashboard.sh.
+4. *Verify* by checking logs in `/opt/liads/logs/` and running `liads/scripts/dashboard.sh`.
 
 ## Logs
 
-All event logs are under the logs/ directory:
-- file_changes.log: filesystem events in /etc and /boot.
-- ssh.log: SSH authentication messages.
-- sudo.log: sudo command usage.
-- failed.log: failed SSH login attempts.
-- process_alerts.log: detected suspicious processes.
-- kernel_modules.log: new kernel modules detected.
-- network.log: snapshots of active network connections.
+All event logs are under the `logs/` directory:
+- `file_changes.log`: filesystem events in `/etc` and `/boot`.
+- `ssh.log`: SSH authentication messages.
+- `sudo.log`: `sudo` command usage.
+- `failed.log`: failed SSH login attempts.
+- `process_alerts.log`: detected suspicious processes.
+- `kernel_modules.log`: new kernel modules detected.
+- `network.log`: snapshots of active network connections.
 
 ## Usage
 
-- **Start/Stop Service:** Use systemctl start|stop liads.
-- **View Dashboard:** Run /opt/liads/scripts/dashboard.sh to see recent events.
-- **Inspect Logs:** Check files in /opt/liads/logs for detailed records.
+- **Start/Stop Service:** Use `systemctl start|stop liads`.
+- **View Dashboard:** Run `/opt/liads/scripts/dashboard.sh` to see recent events.
+- **Inspect Logs:** Check files in `/opt/liads/logs` for detailed records.
 
 LIADS is intended as a lightweight HIDS for Arch Linux, providing continuous monitoring via pure Bash scripts and system tools.
