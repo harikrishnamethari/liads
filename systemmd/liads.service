@@ -1,0 +1,13 @@
+# systemd/liads.service
+[Unit]
+Description=Linux Intrusion Detection and Audit System (LIADS)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /opt/liads/liads.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
