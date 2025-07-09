@@ -1,7 +1,7 @@
 #!/bin/bash
 # scripts/network_monitor.sh - Log active network connections
-BASEDIR="$(dirname "$(readlink -f "$0")")"
-LOGFILE="$BASEDIR/../logs/network.log"
+BASEDIR="~/liads"
+LOGFILE="$BASEDIR/logs/network.log"
 
 # Determine command for listing connections
 if command -v ss >/dev/null 2>&1; then

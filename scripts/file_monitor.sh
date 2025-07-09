@@ -1,7 +1,11 @@
 #!/bin/bash
 # scripts/file_monitor.sh - Watch /etc and /boot for changes
-BASEDIR="$(dirname "$(readlink -f "$0")")"
-LOGFILE="$BASEDIR/../logs/file_changes.log"
+BASEDIR="~/liads"
+LOGS="$BASEDIR/logs"
+
+mkdir -p "$LOGS"
+
+LOGFILE="$LOGS/file_changes.log"
 
 # Ensure inotifywait is available
 if ! command -v inotifywait >/dev/null 2>&1; then

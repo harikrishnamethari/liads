@@ -1,7 +1,7 @@
 #!/bin/bash
 # scripts/process_monitor.sh - Detect suspicious processes
-BASEDIR="$(dirname "$(readlink -f "$0")")"
-LOGFILE="$BASEDIR/../logs/process_alerts.log"
+BASEDIR="~/liads"
+LOGFILE="$BASEDIR/logs/process_alerts.log"
 PATTERN='bash -i|nc (-e|-c)|python -c|perl -e|php -r|sh -c'
 
 while true; do
