@@ -1,6 +1,6 @@
 #!/bin/bash
 # scripts/log_monitor.sh - Monitor SSH and sudo logs via journalctl
-BASEDIR="~/liads"
+BASEDIR="$HOME/liads"
 LOGDIR="$BASEDIR/logs"
 
 # Ensure journalctl is available

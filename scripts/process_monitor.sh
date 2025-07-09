@@ -1,6 +1,6 @@
 #!/bin/bash
 # scripts/process_monitor.sh - Detect suspicious processes
-BASEDIR="~/liads"
+BASEDIR="$HOME/liads"
 LOGFILE="$BASEDIR/logs/process_alerts.log"
 PATTERN='bash -i|nc (-e|-c)|python -c|perl -e|php -r|sh -c'
 

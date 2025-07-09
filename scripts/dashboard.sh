@@ -1,6 +1,6 @@
 #!/bin/bash
 # scripts/dashboard.sh - CLI summary of LIADS logs
-BASEDIR="~/liads"
+BASEDIR="$HOME/liads"
 LOGDIR="$BASEDIR/logs"
 
 echo "===== LIADS Dashboard ====="

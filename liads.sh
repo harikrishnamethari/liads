@@ -1,6 +1,6 @@
 #!/bin/bash
 # liads.sh - Main LIADS launcher
-BASEDIR="~/liads"
+BASEDIR="$HOME/liads"
 LOGDIR="$BASEDIR/logs"
 
 # Create logs directory if missing

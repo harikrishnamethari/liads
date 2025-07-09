@@ -1,6 +1,6 @@
 #!/bin/bash
 # scripts/network_monitor.sh - Log active network connections
-BASEDIR="~/liads"
+BASEDIR="$HOME/liads"
 LOGFILE="$BASEDIR/logs/network.log"
 
 # Determine command for listing connections

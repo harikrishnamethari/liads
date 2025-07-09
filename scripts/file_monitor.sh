@@ -1,6 +1,6 @@
 #!/bin/bash
 # scripts/file_monitor.sh - Watch /etc and /boot for changes
-BASEDIR="~/liads"
+BASEDIR="$HOME/liads"
 LOGS="$BASEDIR/logs"
 
 mkdir -p "$LOGS"
