@@ -6,6 +6,9 @@ LOGDIR="$BASEDIR/logs"
 # Create logs directory if missing
 mkdir -p "$LOGDIR"
 
+# Log LIADS startup
+echo "$(date) LIADS started." >> "$LOGDIR/system.log"
+
 # Launch monitors in background
 bash "$BASEDIR/scripts/file_monitor.sh" &
 bash "$BASEDIR/scripts/log_monitor.sh" &
