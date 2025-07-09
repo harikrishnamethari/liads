@@ -17,7 +17,3 @@ journalctl -f -u sshd -o short-iso | tee -a "$LOGDIR/ssh.log" | \
 
 # Monitor sudo usage (identifier "sudo")
 journalctl -f -t sudo -o short-iso >> "$LOGDIR/sudo.log" &
-
-# Monitor kernel module load/unload events
-journalctl -kf | grep --line-buffered -E "module.*(loaded|unloaded)" >> "$LOGDIR/kernel_modules.log" &
-
