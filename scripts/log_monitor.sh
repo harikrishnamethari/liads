@@ -3,6 +3,8 @@
 BASEDIR="$HOME/liads"
 LOGDIR="$BASEDIR/logs"
 
+trap 'kill $(jobs -p)' EXIT
+
 # Ensure journalctl is available
 if ! command -v journalctl >/dev/null 2>&1; then
   echo "ERROR: journalctl not found."
